@@ -8,7 +8,7 @@ import com.example.androiddevchallenge.viewmodel.MainViewModel
 import kotlinx.coroutines.launch
 
 @Composable
-fun Home() {
+fun MyPanda() {
     val snackBarHostState = SnackbarHostState()
     val coroutineScope = rememberCoroutineScope()
     Scaffold(
