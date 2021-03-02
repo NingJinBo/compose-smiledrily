@@ -9,9 +9,9 @@
 <!--- Describe your app in one or two sentences -->
 This is a fake panda adoption app, for the #AndroidDevChallenge of Jetpack Compose.
 
-Lists some pandas to be adopted.
-Click to show details of each panda.
-In the details page, click back button to go back to the list.
+1.Lists some pandas to be adopted.
+2.Click to show details of each panda.
+3.In the details page, click back button to go back to the list.
 
 ## :bulb: Motivation and Context
 <!--- Optionally point readers to interesting parts of your submission. -->
