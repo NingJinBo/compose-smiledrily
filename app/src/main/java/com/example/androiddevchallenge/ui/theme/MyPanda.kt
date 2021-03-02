@@ -24,16 +24,16 @@ fun MyPanda() {
         }
     ) {
         val viewModel: MainViewModel = viewModel()
-        val currentDog = viewModel.currentPanda
-        PandaList(viewModel.pandas) { dog ->
-            if (currentDog == null) {
-                viewModel.showPanda(dog)
+        val currentPanda = viewModel.currentPanda
+        PandaList(viewModel.pandas) { panda ->
+            if (currentPanda == null) {
+                viewModel.showPanda(panda)
             }
         }
-        if (currentDog != null) {
-            PandaDetails(currentDog) {
+        if (currentPanda != null) {
+            PandaDetails(currentPanda) {
                 coroutineScope.launch {
-                    snackBarHostState.showSnackbar("You have adopted ${currentDog.name}")
+                    snackBarHostState.showSnackbar("You have adopted ${currentPanda.name}")
                 }
             }
         }
