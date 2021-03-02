@@ -17,27 +17,35 @@ package com.example.androiddevchallenge
 
 import android.os.Bundle
 import androidx.activity.compose.setContent
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.tooling.preview.Preview
+import com.example.androiddevchallenge.ui.theme.Home
 import com.example.androiddevchallenge.ui.theme.MyTheme
+import com.example.androiddevchallenge.viewmodel.MainViewModel
 
 class MainActivity : AppCompatActivity() {
+    private val viewModel by viewModels<MainViewModel>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             MyTheme {
-                MyApp()
+                Home()
             }
+        }
+    }
+
+    override fun onBackPressed() {
+        if (viewModel.currentPanda != null) {
+            viewModel.closePanda()
+        } else {
+            super.onBackPressed()
         }
     }
 }
 
 // Start building your app here!
-@Composable
+/*@Composable
 fun MyApp() {
     Surface(color = MaterialTheme.colors.background) {
         Text(text = "Ready... Set... GO!")
@@ -57,5 +65,4 @@ fun LightPreview() {
 fun DarkPreview() {
     MyTheme(darkTheme = true) {
         MyApp()
-    }
-}
+    }*/
