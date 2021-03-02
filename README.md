@@ -1,4 +1,4 @@
-# Panda Finder
+# Put title of your app here
 
 <!--- Replace <OWNER> with your Github Username and <REPOSITORY> with the name of your repository. -->
 <!--- You can find both of these in the url bar when you open your repository in github. -->
@@ -7,13 +7,9 @@
 
 ## :scroll: Description
 <!--- Describe your app in one or two sentences -->
-This is a fake panda adoption app, for the #AndroidDevChallenge of Jetpack Compose.
 
-Lists some pandas to be adopted.
-Click to show details of each panda.
-In the details page, click back button to go back to the list.
+
 ## :bulb: Motivation and Context
-
 <!--- Optionally point readers to interesting parts of your submission. -->
 <!--- What are you especially proud of? -->
 
