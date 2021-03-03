@@ -54,12 +54,12 @@ fun PandaDetails(panda: Panda, onAdopt: (Panda) -> Unit = {}) {
                 { onAdopt(panda) },
                 Modifier
                     .align(Alignment.BottomEnd)
-                    .padding(18.dp)
+                    .padding(20.dp)
             ) {
                 Text(text = "Adopt")
             }
         }
-        Column(Modifier.padding(18.dp, 10.dp)) {
+        Column(Modifier.padding(20.dp, 10.dp)) {
             Text("Name: ${panda.name}", style = MaterialTheme.typography.h2)
             ProvideTextStyle(MaterialTheme.typography.h5) {
                 Text("Breed: ${panda.breed}")
