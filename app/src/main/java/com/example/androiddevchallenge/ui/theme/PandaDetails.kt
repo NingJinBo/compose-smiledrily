@@ -1,3 +1,18 @@
+/*
+ * Copyright 2021 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package com.example.androiddevchallenge.ui.theme
 
 import androidx.compose.foundation.Image
@@ -31,7 +46,7 @@ fun PandaDetails(panda: Panda, onAdopt: (Panda) -> Unit = {}) {
         Box {
             Image(
                 painterResource(panda.picture),
-                "Panda picture: ${panda.name}",
+                "panda picture: ${panda.name}",
                 Modifier.aspectRatio(1f),
                 contentScale = ContentScale.Crop
             )
@@ -39,13 +54,13 @@ fun PandaDetails(panda: Panda, onAdopt: (Panda) -> Unit = {}) {
                 { onAdopt(panda) },
                 Modifier
                     .align(Alignment.BottomEnd)
-                    .padding(16.dp)
+                    .padding(18.dp)
             ) {
                 Text(text = "Adopt")
             }
         }
-        Column(Modifier.padding(16.dp, 8.dp)) {
-            Text("Name: ${panda.name}", style = MaterialTheme.typography.h3)
+        Column(Modifier.padding(18.dp, 10.dp)) {
+            Text("Name: ${panda.name}", style = MaterialTheme.typography.h2)
             ProvideTextStyle(MaterialTheme.typography.h5) {
                 Text("Breed: ${panda.breed}")
                 Text("Location: ${panda.location}")
@@ -62,8 +77,8 @@ fun PandaDetails(panda: Panda, onAdopt: (Panda) -> Unit = {}) {
 fun PandaDetailsPreview() {
     PandaDetails(
         Panda(
-            "PingPing", "Pit Bull Terrier Mix", "Sunnyvale, CA",
-            "23", "Female", "Large", R.drawable.img_puppy_pingping
+            "PingPing", "Ailuropoda melanoleuca melanoleuca", "Chengdu, Sichuan",
+            "23", "Female", "1.2m", R.drawable.img_puppy_pingping
         )
     )
 }
