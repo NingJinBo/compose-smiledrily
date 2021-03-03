@@ -53,7 +53,7 @@ fun PandaDetails(panda: Panda, onAdopt: (Panda) -> Unit = {}) {
             Button(
                 { onAdopt(panda) },
                 Modifier
-                    .align(Alignment.BottomEnd)
+                    .align(Alignment.TopStart)
                     .padding(20.dp)
             ) {
                 Text(text = "Adopt")
