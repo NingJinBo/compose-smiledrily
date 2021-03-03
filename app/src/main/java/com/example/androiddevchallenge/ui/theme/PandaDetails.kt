@@ -41,7 +41,7 @@ fun PandaDetails(panda: Panda, onAdopt: (Panda) -> Unit = {}) {
     Column(
         Modifier
             .fillMaxSize()
-            .background(MaterialTheme.colors.secondary)
+            .background(MaterialTheme.colors.onPrimary)
     ) {
         Box {
             Image(
@@ -53,7 +53,7 @@ fun PandaDetails(panda: Panda, onAdopt: (Panda) -> Unit = {}) {
             Button(
                 { onAdopt(panda) },
                 Modifier
-                    .align(Alignment.BottomEnd)
+                    .align(Alignment.TopStart)
                     .padding(20.dp)
             ) {
                 Text(text = "Adopt")
