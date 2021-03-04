@@ -7,11 +7,7 @@
 
 ## :scroll: Description
 <!--- Describe your app in one or two sentences -->
-This is a fake panda adoption app, for the #AndroidDevChallenge of Jetpack Compose.
-
-1.Lists some pandas to be adopted.
-2.Click to show details of each panda.
-3.In the details page, click back button to go back to the list.
+This is my first example about animals. I feel that compose is very interesting to write, especially after the code is written, it can be previewed in real time, and there is no need to write a lot of xml files. It gets rid of the troubles of recyclerview and listview!!
 
 ## :bulb: Motivation and Context
 <!--- Optionally point readers to interesting parts of your submission. -->
